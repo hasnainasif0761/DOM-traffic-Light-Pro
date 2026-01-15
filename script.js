@@ -1,7 +1,7 @@
 let red = document.getElementById('red');
 let yellow = document.getElementById('yellow');
 let green = document.getElementById('green');
-let StartAuto = document.getElementById('startAuto');
+let timer = document.getElementById('timer')
 
 let counter;
 let currentLight = 'red';
@@ -16,9 +16,40 @@ function turnOffLight () {
 
 function setRed () {
     turnOffLight();
-    red.backgroundColor='red';
+    red.style.backgroundColor='red';
     currentLight = 'red';
     timeLeft = 10;
     UpdateTimer();
 }
+
+function setYellow () {
+    turnOffLight();
+    yellow.style.backgroundColor = 'yellow';
+    timeLeft = 10;
+    UpdateTimer()
+}
+function setGreen () {
+    turnOffLight();
+    green.style.backgroundColor = 'greenyellow';
+    timeLeft = 10;
+    UpdateTimer()
+}
+
+
+function UpdateTimer () {
+    timer.innerHTML = "Time Left " + timeLeft
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
