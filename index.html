@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Traffic Light Simulator Project</title>
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Traffic Light System</h1>
+    <div id="traffic-light">
+        <div id="red" class="light"></div>
+        <div id="yellow" class="light"></div>
+        <div id="green" class="light"></div>
+    </div>
+    <div id="timer">Time Left: --</div>
+
+    <button onclick="manualRed()">Red</button>
+    <button onclick="manualYellow()">yellow</button>
+    <button onclick="manualGreen()">green</button>
+    <button onclick="startAuto()">Start Auto Mode</button>
+    <script src="script.js"></script>
 </body>
 </html>
